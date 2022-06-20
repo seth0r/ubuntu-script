@@ -1,0 +1,12 @@
+FROM       ubuntu:22.04
+MAINTAINER Seth0r "https://github.com/seth0r"
+
+RUN apt-get update
+RUN apt-get dist-upgrade -y
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+ENV SCRIPT "/run.sh"
+
+CMD $SCRIPT
