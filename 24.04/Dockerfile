@@ -1,4 +1,4 @@
-FROM       ubuntu:18.04
+FROM       ubuntu:24.04
 MAINTAINER Seth0r "https://github.com/seth0r"
 
 RUN apt-get update
